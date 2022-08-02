@@ -6,7 +6,7 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="" width="185" height="96" alt="логотип сайта туров в город Седона">
       </a>
       <nav class="page-header__nav main-nav">
@@ -16,10 +16,10 @@
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link">Фото и видео</a>
+            <a class="main-nav__link"  href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <a class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">HTML ACADEMY</a>
@@ -27,8 +27,91 @@
         </ul>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visual-hidden"></h1>
+    <main class="form-content">
+      <h1 class="visual-hidden">Страница отправки отзовов отелей города Седона, штат Аризона</h1>
+      <section class="form-content__intro form-content__intro--catalog">
+        <img class="intro__image-text--short" src="" width="282" height="214" alt="Надпись:Sedona">
+        <p class="intro__subtitle">Оставьте свой отзыв</p>
+        <p class="intro__lead">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <form class="form-content__form-review form-review" method="post" action="">
+        <fieldset class="form-review__item form-review-name">
+          <h2 class="form-review__title">Представьтесь:</h2>
+          <ul class="form-review__list">
+            <li class="form-review__option">
+              <label class="form-review__label" for="name">Имя*:</label>
+              <input class="form-review__input" type="text" name="first-name" id="first-name" placeholder="Пётр" required>
+            </li>
+            <li class="form-review__option">
+              <label class="form-review__label" for="surname">Фамилия*:</label>
+              <input class="form-review__input" type="text" name="surname" id="surname" placeholder="Пустота" required>
+            </li>
+            <li class="form-review__option">
+              <label class="form-review__label" for="patronymic">Отчество:</label>
+              <input class="form-review__input" type="text" name="patronymic" id="spatronymic" placeholder="Викторович">
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__item form-review-contact">
+          <h2 class="form-review__title">Контактная информация:</h2>
+          <ul class="form-review__list">
+            <li class="form-review__option">
+              <label class="form-review__label" for="phone">Контактный телефон*:</label>
+              <input class="form-review__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+            </li>
+            <li class="form-review__option">
+              <label class="form-review__label" for="email">Электронная почта*:</label>
+              <input class="form-review__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__item form-review-experience">
+          <h2 class="form-review__title">Ваше Общее впечатление:</h2>
+          <ul class="form-review__list">
+            <li class="form-review__option">
+              <input class="form-review__radio"  name="experience" id="good-experience" value="good-experience" type="radio" checked>
+              <label class="form-review__label-radio" for="good-experience">Скорее положительное</label>
+            </li>
+            <li class="form-review__option">
+              <input class="form-review__radio"  name="experience" id="bad-experience" value="bad-experience" type="radio">
+              <label class="form-review__label-radio" for="bad-experience">Скорее отрицательное</label>
+            </li>
+            <li class="form-review__option">
+              <input class="form-review__radio"  name="experience" id="difficult-to-answer" value="difficult-to-answer" type="radio">
+              <label class="form-review__label-radio" for="difficult-to-answer">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__item form-review-attractions">
+          <h2 class="form-review__title">Ваше Общее впечатление:</h2>
+          <ul class="form-review__list">
+            <li class="form-review__option">
+              <input class="form-review__checkbox" id="devils-bridge" name="devils-bridge" type="checkbox" checked>
+              <label class="form-review__label-checkbox" for="devils-bridge">Мост Дьявола</label>
+            </li>
+            <li class="form-review__option">
+              <input class="form-review__checkbox" id="bell-mountain" name="bell-mountain"  type="checkbox" checked>
+              <label class="form-review__label-checkbox" for="bell-mountain">Гора-Колокол</label>
+            </li>
+            <li class="form-review__option">
+              <input class="form-review__checkbox" id="slide-park" name="slide-park" type="checkbox" checked>
+              <label class="form-review__label-checkbox" for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="form-review__option">
+              <input class="form-review__checkbox" id="red-rocks" name="red-rocks" type="checkbox">
+              <label class="form-review__label-checkbox" for="red-rocks">Красные скалы</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-review__item form-review-emotions">
+          <h2 class="form-review__title">Опишите свои эмоции:</h2>
+          <label class="visually-hidden" for="emotions-review">Запишите свои эмоции:</label>
+          <textarea class="form-review__textarea"  id="emotions-review" name="emotions-review" rows="4" cols="50">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <button class="button form-review__button" type="submit">Отправить отзыв</button>
+        <p class="form-review__note">* — обязательные поля</p>
+      </form>
+      </section>
     </main>
     <footer class="page-footer">
       <p class="page-footer__hashtag">#visitsedona</p>
@@ -54,5 +137,15 @@
         <img class="copyright__logo" src="" width="27" height="35" alt="Логотип компании HTMLacademy">
       </div>
     </footer>
+    <section class="modal modal-failure">
+      <h2 class="modal__title">Что-то пошло не так!</h2>
+      <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="modal__button button button--short" type="button">Ok</button>
+    </section>
+    <section class="modal modal-success">
+      <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+      <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button button" type="button">Закрыть окно</button>
+    </section>
   </body>
 </html>
