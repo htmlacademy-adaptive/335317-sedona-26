@@ -1,0 +1,21 @@
+.form-review {
+  padding: $min-page-padding;
+}
+
+.form-review__list {
+  @include list-style-blocks;
+}
+
+.form-review__item {
+  padding: 24px 0 24px 0;
+  border: none;
+  box-sizing: border-box;
+
+  &:first-child {
+    padding-bottom: 39px;
+  }
+
+  &:nth-child(2) {
+    padding-bottom: 34px;
+  }
+}

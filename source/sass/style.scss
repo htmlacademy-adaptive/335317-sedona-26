@@ -1,4 +1,18 @@
-// Начните писать стили здесь
-body {
-  background-color: rgb(254, 0, 0);
-}
+@import "colors.scss";
+@import "variables.scss";
+@import "global.scss";
+@import "fonts.scss";
+@import "visually-hidden.scss";
+@import "page.scss";
+@import "button.scss";
+@import "main-nav.scss";
+@import "intro.scss";
+@import "page-main.scss";
+@import "features.scss";
+@import "tips.scss";
+@import "social.scss";
+@import "booking.scss";
+@import "page-footer.scss";
+@import "copyright.scss";
+@import "location.scss";
+@import "form-review.scss";

@@ -1,0 +1,19 @@
+.tips__item {
+  margin-bottom: 22px;
+
+  &:first-child {
+    padding-top: 23px;
+  }
+
+  &:last-child {
+    margin-bottom: 52px;
+  }
+}
+
+.tips__title {
+  margin-bottom: 14px;
+}
+
+.tips__description {
+  margin: 0;
+}

@@ -1,0 +1,35 @@
+.intro {
+  display: grid;
+  padding: $min-page-padding;
+  text-align: center;
+}
+
+.intro__image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 32px;
+  padding-top: 90px;
+  padding-bottom: 85px;
+  background-image: url("../img/Mountains.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 00%;
+  background-size: cover;
+  order: -1;
+
+  &--short {
+    margin-bottom: 36px;
+  }
+}
+
+.intro__subtitle {
+  margin: 0 0 24px 0;
+
+  &--without-text {
+    margin: 0;
+  }
+}
+
+.intro__lead {
+  margin: 0;
+}

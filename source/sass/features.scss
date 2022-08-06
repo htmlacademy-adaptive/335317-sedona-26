@@ -1,0 +1,65 @@
+.features__lead {
+  margin: 0 0 32px;
+  padding: $min-page-padding;
+  text-align: center;
+}
+
+.features__list {
+  @include list-style-blocks;
+}
+
+.features__item {
+  padding: $min-page-padding;
+  padding-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  &--accent {
+    padding-top: 26px;
+    padding-bottom: 0px;
+    color: $basic-white;
+    background-color: $basic-blue;
+  }
+
+  &:first-child {
+    padding-top: 54px;
+  }
+
+  &:last-child {
+    margin-bottom: 26px;
+  }
+}
+
+/*можно ли оставить блок feature в разделе features для удобства поиска?*/
+.feature {
+  display: grid;
+}
+
+.feature__tips {
+  @include list-style-blocks;
+  margin-bottom: 6px;
+  background-color: $basic-white;
+  color: $text-main-color;
+  text-align: left;
+  order: 2;
+}
+
+.feature__title {
+  /*  margin: 0; - установлены в page__title*/
+  margin-bottom: 14px;
+}
+
+.feature__number {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.feature__description {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.feature__image {
+  margin: 0 auto;
+  order: 1;
+}

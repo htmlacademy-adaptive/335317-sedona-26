@@ -1,0 +1,31 @@
+.button {
+  font-family: inherit;
+  font-weight: 700px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $button-text-main-color;
+  background-color: $button-main-color;
+  word-break: break-word;
+  text-align: center;
+  border: none;
+
+  &--find-hotel {
+    font-size: 21px;
+    padding: 16px 49px;
+  }
+
+  &--send-review {
+    font-size: 21px;
+    padding: 18.5px 34px 13.5px 32px;
+  }
+
+  &--ok {
+    font-size: 18px;
+    padding: 18px 63px 14px 64px;
+  }
+
+  &--close-window {
+    font-size: 18px;
+    padding: 18px 62px 14px 60px;
+  }
+}

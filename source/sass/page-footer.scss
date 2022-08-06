@@ -1,0 +1,17 @@
+.page-footer {
+  padding: $min-page-padding;
+  padding-top: 38px;
+  padding-bottom: 29px;
+}
+
+.page-footer__hashtag {
+  margin: 0 0 33px 0;
+  font-weight: 700;
+}
+
+.page-footer__social {
+  @include list-style-blocks;
+  margin-bottom: 47px;
+}
+
+
