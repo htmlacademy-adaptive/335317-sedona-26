@@ -12,6 +12,7 @@
   padding-top: 90px;
   padding-bottom: 85px;
   background-image: url("../img/Mountains.jpg");
+  background-color: $intro-index-background-color;
   background-repeat: no-repeat;
   background-position: 50% 00%;
   background-size: cover;
@@ -19,6 +20,7 @@
 
   &--short {
     margin-bottom: 36px;
+    background-color: $intro-pages-background-color;
   }
 }
 

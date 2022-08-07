@@ -1,0 +1,31 @@
+.features__lead {
+  margin: 0 0 32px;
+  padding: $min-page-padding;
+  text-align: center;
+}
+
+.features__list {
+  @include list-style-blocks;
+}
+
+.features__item {
+  padding: $min-page-padding;
+  padding-top: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+
+  &--accent {
+    padding-top: 26px;
+    padding-bottom: 0;
+    color: $basic-white;
+    background-color: $basic-blue;
+  }
+
+  &:first-child {
+    padding-top: 54px;
+  }
+
+  &:last-child {
+    margin-bottom: 26px;
+  }
+}

@@ -1,0 +1,32 @@
+.feature {
+  display: grid;
+}
+
+.feature__tips {
+  @include list-style-blocks;
+  margin-bottom: 6px;
+  background-color: $basic-white;
+  color: $text-main-color;
+  text-align: left;
+  order: 2;
+}
+
+.feature__title {
+  /*  margin: 0; - установлены в page__title*/
+  margin-bottom: 14px;
+}
+
+.feature__number {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.feature__description {
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.feature__image {
+  margin: 0 auto;
+  order: 1;
+}
