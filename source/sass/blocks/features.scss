@@ -11,8 +11,8 @@
 .features__item {
   padding: $min-page-padding;
   padding-top: 24px;
-  margin-bottom: 24px;
   text-align: center;
+  background-color: $basic-grey;
 
   &--accent {
     padding-top: 26px;
@@ -22,7 +22,7 @@
   }
 
   &:first-child {
-    padding-top: 54px;
+    background-color: $basic-white;
   }
 
   &:last-child {

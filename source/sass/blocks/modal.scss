@@ -1,8 +1,14 @@
+.modal {
+  text-align: center;
+}
+
 .modal__description {
   margin: 0 0 28px 0;
 
   &--big {
     margin-bottom: 68px;
+    padding-right: 39px;
+    padding-left: 39px;
   }
 }
 
@@ -11,5 +17,6 @@
 }
 
 .modal--success {
-  padding: 39px 38px 20px;
+  padding: 39px 20px 20px;
+  background-image: linear-gradient(180deg, #ffffff 0 67%, #f2f2f2 6% 100%);
 }
