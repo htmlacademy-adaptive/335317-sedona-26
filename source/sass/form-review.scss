@@ -7,15 +7,23 @@
 }
 
 .form-review__item {
-  padding: 24px 0 24px 0;
+  margin-bottom: 24px;
+  padding: 0;
   border: none;
   box-sizing: border-box;
 
   &:first-child {
-    padding-bottom: 39px;
+    margin-bottom: 39px;
   }
 
   &:nth-child(2) {
-    padding-bottom: 34px;
+    margin-bottom: 34px;
   }
+}
+
+.form-review__note {
+  margin: 3px 0 0 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: right;
 }

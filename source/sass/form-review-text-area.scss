@@ -1,4 +1,10 @@
 .form-review-text-area {
   width: 100%;
-  height: 150px;
+  min-height: 150px;
+  margin: 0 0 56px 0;
+  padding: 16px;
+  font-family: inherit;
+  font-weight: 700;
+  color: $input-text-text-area;
+  background-color: $input-basic-grey;
 }
