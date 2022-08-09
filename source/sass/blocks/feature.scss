@@ -8,14 +8,14 @@
     linear-gradient(10deg, #81b3d2 85%, transparent 85%),
     linear-gradient(350deg, #81b3d2 85%, transparent 85%);
   background-position:
-  0 0,
-  0 0;
+    0 0,
+    0 0;
 }
 
 .feature__tips {
   @include list-style-blocks;
   margin-bottom: 6px;
-  background-color: $basic-white;
+  background-color: $basic-background;
   color: $text-main-color;
   text-align: left;
   order: 2;
