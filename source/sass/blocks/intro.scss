@@ -1,16 +1,9 @@
 .intro {
   display: grid;
-  padding: $min-page-padding;
   text-align: center;
 }
 
-.intro__image {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 32px;
-  padding-top: 90px;
-  padding-bottom: 85px;
+.intro__wrapper {
   background-color: #dbe9f2;
   background-image:
     linear-gradient(10deg, #ffffff 25%, transparent 25%),
@@ -24,11 +17,12 @@
   background-size: cover;
   order: -1;
 
-  &--short {
-    margin-bottom: 36px;
-    padding-top: 53px;
-    padding-bottom: 67px;
+  &--not-main {
     background-color: #3a4e53;
+    background-image:
+      linear-gradient(10deg, #ffffff 26%, transparent 26%),
+      linear-gradient(350deg, #ffffff 26%, transparent 26%),
+      url("../img/Mountains.jpg");
     background-position:
       0 30px,
       0 30px,
@@ -36,18 +30,27 @@
   }
 }
 
+.intro__image {
+  margin: 0 auto;
+  padding-top: 90px;
+  padding-bottom: 85px;
+
+  &--short {
+    padding-top: 53px;
+    padding-bottom: 67px;
+  }
+}
+
 .intro__subtitle {
-  margin: 0 0 24px 0;
+  margin: 36px 0 28px 0;
+  padding: $min-page-padding;
 
   &--without-text {
-    margin: 0;
-  }
-
-  &--catalog {
-    margin: 0 0 28px 0;
+    margin-bottom: 0;
   }
 }
 
 .intro__lead {
   margin: 0;
+  padding: $min-page-padding;
 }
