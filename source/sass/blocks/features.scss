@@ -9,7 +9,6 @@
 }
 
 .features__item {
-  padding: $min-page-padding;
   padding-top: 24px;
   text-align: center;
   background-color: $basic-grey;
@@ -22,6 +21,7 @@
   }
 
   &:first-child {
+    padding-top: 0;
     background-color: $basic-background;
   }
 
