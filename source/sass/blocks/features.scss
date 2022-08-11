@@ -1,0 +1,32 @@
+.features__lead {
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  padding-top: 24px;
+  text-align: center;
+  background-color: $basic-grey;
+
+  &--accent {
+    padding-top: 26px;
+    padding-bottom: 0;
+    color: $basic-background;
+    background-color: $basic-blue;
+  }
+
+  &:first-child {
+    padding-top: 0;
+    background-color: $basic-background;
+  }
+
+  &:last-child {
+    margin-bottom: 26px;
+  }
+}

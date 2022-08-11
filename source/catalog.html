@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header container">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="логотип сайта туров в город Седона">
       </a>
       <nav class="page-header__nav main-nav">
-        <button class="main-nav__close" type="button" aria-label="Отразить навигацию по разделам сайта"></button>
+        <button class="main-nav__close" type="button" aria-label="Отобразить навигацию по разделам сайта"></button>
         <ul class="main-nav__items">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
@@ -30,11 +31,13 @@
     <main class="catalog-content">
       <h1 class="visually-hidden">Живописные места города Седона</h1>
       <section class="catalog-content__intro intro">
-        <h2 class="intro__subtitle">Фото и видео</h2>
-        <img class="intro__image intro__image--short" src="img/SEDONA.svg" width="282" height="39" alt="Надпись:Sedona">
-        <p class="intro__lead">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <h2 class="page__title intro__subtitle container">Фото и видео</h2>
+        <div class="intro__wrapper intro__wrapper--not-main">
+          <img class="intro__image intro__image--short" src="img/SEDONA.svg" width="229" height="39" alt="Надпись:Sedona">
+        </div>
+        <p class="intro__lead container">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
-      <section class="catalog-content__photos photos">
+      <section class="catalog-content__photos photos container">
         <h2 class="visually-hidden">Фотографии путишественников</h2>
         <div class="photos__list">
           <figure class="photos__post post">
@@ -58,7 +61,7 @@
             </figcaption>
           </figure>
           <figure class="photos__post post">
-            <a class="post__link" href="#">s
+            <a class="post__link" href="#">
               <img class="post__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="дорога среди хвойного леса">
             </a>
             <figcaption class="post__description">
@@ -79,16 +82,16 @@
           </figure>
         </div>
       </section>
-      <section class="catalog-content__presentation presentation">
-        <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__describtion">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <section class="catalog-content__presentation presentation container">
+        <h2 class="page__title presentation__title">Все еще сомневаетесь?</h2>
+        <p class="presentation__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         <video class="presentation__video" width="280" height="177" poster="img/Poster-video-mobile.jpg">
           <source src="#" type="video/mp4">
           <source src="#" type="video/ogg">
         </video>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social">
         <li class="social__item social__item--vkontakte">

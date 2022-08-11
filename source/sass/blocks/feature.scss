@@ -1,0 +1,45 @@
+.feature {
+  display: grid;
+}
+
+.feature__wrapper {
+  padding-top: 54px;
+  background-image:
+    linear-gradient(10deg, #81b3d2 85%, transparent 85%),
+    linear-gradient(350deg, #81b3d2 85%, transparent 85%),
+    linear-gradient(180deg, #ffffff 15%, #81b3d2 15%);
+  background-position:
+    0 -20px,
+    0 -20px,
+    0 0;
+}
+
+.feature__tips {
+  list-style: none;
+  margin: 0 0 6px 0;
+  padding: 0;
+  background-color: $basic-background;
+  color: $text-main-color;
+  text-align: left;
+  order: 2;
+}
+
+.feature__title {
+  margin-bottom: 14px;
+}
+
+.feature__number {
+  margin-top: 0;
+  margin-bottom: 21px;
+}
+
+.feature__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.feature__image {
+  width: 100%;
+  margin-top: 11px;
+  order: 1;
+}
