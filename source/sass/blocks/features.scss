@@ -1,11 +1,12 @@
 .features__lead {
-  margin: 0 0 32px;
-  padding: $min-page-padding;
+  margin: 0 auto 32px;
   text-align: center;
 }
 
 .features__list {
-  @include list-style-blocks;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .features__item {

@@ -1,5 +1,4 @@
 .page-footer {
-  padding: $min-page-padding;
   padding-top: 38px;
   padding-bottom: 29px;
 }
@@ -11,6 +10,7 @@
 }
 
 .page-footer__social {
-  @include list-style-blocks;
-  margin-bottom: 47px;
+  list-style: none;
+  margin: 0 0 47px 0;
+  padding: 0;
 }

@@ -15,9 +15,9 @@
 }
 
 .feature__tips {
-  @include list-style-blocks;
-  margin-bottom: 6px;
-  padding: $min-page-padding;
+  list-style: none;
+  margin: 0 0 6px 0;
+  padding: 0;
   background-color: $basic-background;
   color: $text-main-color;
   text-align: left;

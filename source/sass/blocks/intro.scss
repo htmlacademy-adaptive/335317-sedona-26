@@ -42,15 +42,13 @@
 }
 
 .intro__subtitle {
-  margin: 36px 0 28px 0;
-  padding: $min-page-padding;
+  margin: 36px auto 28px auto;
 
   &--without-text {
-    margin-bottom: 0;
+    margin-bottom: 0 auto;
   }
 }
 
 .intro__lead {
-  margin: 0;
-  padding: $min-page-padding;
+  margin: 0 auto;
 }
