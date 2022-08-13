@@ -1,18 +1,19 @@
+.main-nav {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
 .main-nav__items {
-  width: 320px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 678px;
-    justify-content: space-around;
     flex-wrap: wrap;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1038px;
   }
 }
 
@@ -20,7 +21,20 @@
   background-color: $button-main-color;
 
   @media (min-width: $tablet-width) {
+    min-width: 153px;
     background-color: $basic-background;
+
+    &:nth-child(2) {
+      margin-right: 140px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 240px;
+
+    &:nth-child(2) {
+      margin-right: 240px;
+    }
   }
 }
 
@@ -36,6 +50,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding: 18px 10px 17px;
     font-size: 14px;
     line-height: 21px;
     color: $main-menu-basic;
