@@ -1,12 +1,27 @@
 .main-nav__items {
-  list-style: none;
+  width: 320px;
   margin: 0;
   padding: 0;
-  display: block;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 678px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1038px;
+  }
 }
 
 .main-nav__item {
   background-color: $button-main-color;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-background;
+  }
 }
 
 .main-nav__link {
@@ -19,4 +34,20 @@
   line-height: 26px;
   color: $button-text-main-color;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 21px;
+    color: $main-menu-basic;
+
+    &--current {
+      color: $main-menu-current;
+    }
+  }
+}
+
+.main-nav__close {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,0 +1,16 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  right: calc(50vw - 92px);
+  width: 185px;
+  height: 96px;
+}

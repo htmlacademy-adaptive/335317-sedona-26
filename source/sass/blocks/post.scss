@@ -1,5 +1,44 @@
 .post {
+  position: relative;
   padding: 24px 0 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background-color: $basic-grey;
+  }
+
+  &:nth-child(2n+3) {
+    @media (min-width: $tablet-width) {
+      background-color: $post-grey-accent;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: $tablet-width) {
+      grid-column: 1 / 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1 / 4;
+    }
+  }
+}
+
+.post__description {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: $basic-white;
+    background-color: $post-description-opacity;
+    z-index: 1;
+  }
 }
 
 .post__link {
@@ -13,9 +52,15 @@
 
 .post__author {
   margin: 0 0 16px 0;
+  text-transform: none;
 }
 
 .post__likes {
   margin: 0;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
 }

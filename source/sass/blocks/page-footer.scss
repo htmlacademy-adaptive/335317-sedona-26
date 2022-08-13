@@ -1,6 +1,11 @@
 .page-footer {
-  padding-top: 38px;
-  padding-bottom: 29px;
+  padding: 29px 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0;
+  }
 }
 
 .page-footer__hashtag {
@@ -10,6 +15,8 @@
 }
 
 .page-footer__social {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0 0 47px 0;
   padding: 0;

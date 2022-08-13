@@ -1,0 +1,18 @@
+.location__map {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.location__noscript {
+  position: relative;
+}
+
+.location__marker {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  z-index: 1;
+}

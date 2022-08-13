@@ -1,6 +1,6 @@
 .button {
   font-family: inherit;
-  font-weight: 700px;
+  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
   color: $button-text-main-color;
@@ -11,7 +11,11 @@
 
   &--find-hotel {
     font-size: 21px;
-    padding: 15px 47px;
+    padding: 15px 34px;
+
+    @media (min-width: $tablet-width) {
+      padding: 15px 121px 17px;
+    }
   }
 
   &--send-review {
