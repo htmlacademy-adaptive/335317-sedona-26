@@ -2,9 +2,11 @@
 @import "variables.scss";
 @import "global.scss";
 @import "visually-hidden.scss";
-@import "./blocks/container.scss";
+@import "container.scss";
+@import "wrapper.scss";
 @import "./blocks/page.scss";
 @import "./blocks/button.scss";
+@import "./blocks/page-header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/intro.scss";
 @import "./blocks/page-main.scss";
@@ -22,3 +24,4 @@
 @import "./blocks/photos.scss";
 @import "./blocks/post.scss";
 @import "./blocks/presentation.scss";
+@import "./blocks/location.scss";

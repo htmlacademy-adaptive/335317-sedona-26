@@ -31,7 +31,6 @@
 }
 
 .intro__image {
-  margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 85px;
 
@@ -42,13 +41,15 @@
 }
 
 .intro__subtitle {
-  margin: 36px auto 28px auto;
+  margin: 32px auto 28px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+    margin-bottom: 32px;
+  }
 
   &--without-text {
-    margin-bottom: 0 auto;
+    max-width: 520px;
+    margin-bottom: 0;
   }
-}
-
-.intro__lead {
-  margin: 0 auto;
 }

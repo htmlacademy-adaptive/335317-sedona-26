@@ -1,7 +1,17 @@
 .catalog-content__intro {
-  margin-bottom: 38px;
+  margin-bottom: 44px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 92px;
+  }
 }
 
-.catalog-content__presentation {
-  margin: 0 auto;
+.catalog-content__photos {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }

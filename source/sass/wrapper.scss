@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 282px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+  }
+}
+
+.wrapper--narrow {
+  @media (min-width: $tablet-width) {
+    max-width: 490px;
+    margin: 0 auto;
+  }
+}

@@ -1,13 +1,26 @@
 .booking {
   padding-top: 38px;
-  padding-bottom: 49px;
+  padding-bottom: 64px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+    padding-bottom: 71px;
+  }
 }
 
 .booking__title {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 34px;
+  }
 }
 
 .booking__description {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }

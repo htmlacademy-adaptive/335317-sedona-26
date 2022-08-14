@@ -5,17 +5,41 @@
   font-weight: 700;
   line-height: 26px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    font-size: 21px;
+    text-align: center;
+  }
+
+  &--form-section {
+    @media (min-width: $tablet-width) {
+      width: 400px;
+      grid-column: 1 / 3;
+    }
+  }
+
   &--center {
     margin: 0 auto;
+    text-align: center;
   }
 
   &--accent {
     font-size: 21px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 30px;
+    }
   }
 
   &--form-review {
     margin-bottom: 20px;
     padding-top: 24px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 0;
+      margin-bottom: 28px;
+    }
   }
 
   &--modal {
