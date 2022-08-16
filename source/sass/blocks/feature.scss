@@ -7,6 +7,10 @@
     padding: 41px 34px;
   }
 
+  @media (min-width: $desktop-width) {
+    padding: 42px 43px 62px;
+  }
+
   &--accent {
     padding-top: 26px;
     padding-bottom: 0;
@@ -18,6 +22,10 @@
       grid-template-columns: 1fr 2fr;
       grid-column: 1 / 4;
       padding: 0;
+
+      &:nth-child(2) {
+        grid-template-columns: 2fr 1fr;
+      }
     }
   }
 
@@ -100,5 +108,15 @@
 
   @media (min-width: $tablet-width) {
     height: 256px;
+
+    &--first-place {
+      order: -1;
+    }
+  }
+}
+
+.feature__break-text {
+  @media (min-width: $mobile-and-tablet-width) {
+    display: none;
   }
 }

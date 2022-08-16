@@ -1,5 +1,30 @@
+.copyright__image {
+  margin-left: 12px;
+  fill: $basic-black;
+}
+
 .copyright {
   display: flex;
+  align-items: center;
+  line-height: 0;
+  color: $basic-black;
+  cursor: pointer;
+
+  &:hover {
+    color: $basic-blue;
+
+    .copyright__image {
+      fill: $basic-blue;
+    }
+  }
+
+  &:active {
+    color: $opacity-black;
+
+    .copyright__image {
+      fill: $opacity-black;
+    }
+  }
 }
 
 .copyright__text {

@@ -1,5 +1,7 @@
 .tips__item {
+  position: relative;
   margin-bottom: 22px;
+  padding-left: 65px;
 
   &:first-child {
     @media (max-width: $mobile-width-only) {
@@ -10,6 +12,43 @@
   &:last-child {
     @media (max-width: $mobile-width-only) {
       margin-bottom: 52px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 58px;
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+
+
+    @media (min-width: $tablet-width) {
+      top: 20%;
+      left: 45%;
+    }
+  }
+
+  &--accommodation {
+    &::before {
+      @media (max-width: $mobile-width-only) {
+        top: 20px;
+      }
+      background-image: url("../../img/house.svg");
+    }
+  }
+
+  &--food {
+    &::before {
+      background-image: url("../../img/burger.svg");
+    }
+  }
+
+  &--souvenirs {
+    &::before {
+      background-image: url("../../img/present.svg");
     }
   }
 

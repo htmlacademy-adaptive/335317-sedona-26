@@ -8,6 +8,16 @@
   word-break: break-word;
   text-align: center;
   border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-main-color-hover;
+  }
+
+  &:active {
+    color: $opacity-white;
+    background-color: $button-main-color-down;
+  }
 
   &--find-hotel {
     font-size: 21px;

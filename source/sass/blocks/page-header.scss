@@ -1,6 +1,8 @@
 .page-header {
   display: flex;
+  min-height: 56px;
   flex-direction: column;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -13,4 +15,5 @@
   right: calc(50vw - 92px);
   width: 185px;
   height: 96px;
+  z-index: 1;
 }

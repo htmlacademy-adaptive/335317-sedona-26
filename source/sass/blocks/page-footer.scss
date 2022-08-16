@@ -1,8 +1,13 @@
 .page-footer {
   padding: 29px 0;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+  }
 
   @media (min-width: $tablet-width) {
-    display: flex;
     justify-content: space-between;
     padding: 36px 0;
   }
@@ -12,12 +17,16 @@
   margin: 0 0 33px;
   font-weight: 700;
   font-size: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  margin: 0 0 47px 0;
-  padding: 0;
+  margin: 0 0 47px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
