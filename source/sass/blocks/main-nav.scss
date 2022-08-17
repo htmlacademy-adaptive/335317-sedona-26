@@ -62,11 +62,10 @@
   font-size: 18px;
   line-height: 26px;
   color: $button-text-main-color;
-  text-decoration: none;
   text-align: center;
   background-color: $button-main-color;
-  border-top: 1px $light-blue;
-  border-bottom: 1px $dark-blue;
+  border-top: solid 1px $light-blue;
+  border-bottom: solid 1px $dark-blue;
   cursor: pointer;
 
   :first-child {
@@ -81,8 +80,8 @@
     padding: 18px 10px 17px;
     font-size: 14px;
     line-height: 21px;
-    color: $main-menu-basic;
-    background-color: $basic-background;
+    color: $basic-black;
+    background-color: $basic-white;
     border: none;
 
     &--current {

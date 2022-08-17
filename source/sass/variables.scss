@@ -4,32 +4,31 @@ $basic-blue: #81b3d2;
 $dark-blue: #6c8aad;
 $light-blue: #9ebee0;
 $basic-grey: #f2f2f2;
-$text-main-color: #333333;
-
-$input-basic-grey: #f2f2f2;
-$input-grey-hover: #e5e5e5;
-$input-grey-down: #d5d5d5;
-$input-black: #000000;
 $basic-black: #000000;
-$input-text-text-area: rgba(0, 0, 0, 0.3);
 $opacity-black: rgba(0, 0, 0, 0.3);
 
+$text-main-color: #333333;
+
+$input-basic-grey: $basic-grey;
+$input-dark-grey: #e6e6e6;
+$input-grey-hover: #e5e5e5;
+$input-grey-down: #d5d5d5;
+
 $main-menu-current: #766357;
-$main-menu-down: #ffffff;
+$main-menu-down: $basic-white;
 $main-menu-hover: #669ec0;
-$main-menu-basic: #000000;
 
 $button-main-color: #81b3d2;
-$button-text-main-color: #ffffff;
-$button-main-color-hover: #5496bd;
+$button-text-main-color: $basic-white;
+$button-main-color-hover: #669ec0;
 $button-main-color-down: #5496bd;
 $button-main-color-disabled: #e5e5e5;
 
 $intro-index-background-color: #dbe9f2;
 $inro-pages-background-color: #3a4e53;
-$basic-background: $basic-white;
 $post-grey-accent: #eaeaea;
-$post-description-opacity: rgba(0, 0, 0, 0.3);
+
+$border-grey: #e5e5e5;
 
 $tablet-width: 768px;
 $desktop-width: 1200px;

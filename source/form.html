@@ -60,11 +60,11 @@
           <legend class="page__title page__title--form-review">Контактная информация:</legend>
           <ul class="form-review__list">
             <li class="form-review__option">
-              <label class="form-review__label" for="phone">Контактный телефон*:</label>
+              <label class="form-review__label form-review__label--image form-review__label--phone" for="phone">Контактный телефон*:</label>
               <input class="form-review__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
             </li>
             <li class="form-review__option">
-              <label class="form-review__label" for="email">Электронная почта*:</label>
+              <label class="form-review__label form-review__label--image form-review__label--email" for="email">Электронная почта*:</label>
               <input class="form-review__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </li>
           </ul>
@@ -73,49 +73,69 @@
           <legend class="page__title page__title--form-section page__title--form-review">Ваше общее впечатление:</legend>
           <ul class="form-review__list">
             <li class="form-review__option">
-              <input class="form-review__radio"  name="experience" id="good-experience" value="good-experience" type="radio" checked>
-              <label class="form-review__label-radio" for="good-experience">Скорее положительное</label>
+              <label class="form-review__label-radio" for="good-experience">
+                <input class="form-review__radio visually-hidden"  name="experience" id="good-experience" value="good-experience" type="radio" checked>
+                <span class="form-review__designed-radio"></span>
+                Скорее положительное
+              </label>
             </li>
             <li class="form-review__option">
-              <input class="form-review__radio"  name="experience" id="bad-experience" value="bad-experience" type="radio">
-              <label class="form-review__label-radio" for="bad-experience">Скорее отрицательное</label>
+              <label class="form-review__label-radio" for="bad-experience">
+                <input class="form-review__radio visually-hidden"  name="experience" id="bad-experience" value="bad-experience" type="radio">
+                <span class="form-review__designed-radio"></span>
+                Скорее отрицательное
+              </label>
             </li>
             <li class="form-review__option">
-              <input class="form-review__radio"  name="experience" id="difficult-to-answer" value="difficult-to-answer" type="radio">
-              <label class="form-review__label-radio" for="difficult-to-answer">Затрудняюсь ответить</label>
+              <label class="form-review__label-radio" for="difficult-to-answer">
+                <input class="form-review__radio visually-hidden"  name="experience" id="difficult-to-answer" value="difficult-to-answer" type="radio">
+                <span class="form-review__designed-radio"></span>
+                Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form-review__item form-review__item--attractions">
           <legend class="page__title page__title--form-section page__title--form-review">Посещенные достопримечательности:</legend>
           <ul class="form-review__list">
-            <li class="form-review__option form-review__option--narrow">
-              <input class="form-review__checkbox" id="devils-bridge" name="devils-bridge" type="checkbox" checked>
-              <label class="form-review__label-checkbox" for="devils-bridge">Мост Дьявола</label>
+            <li class="form-review__option">
+              <label class="form-review__label-checkbox" for="devils-bridge">
+                <input class="form-review__checkbox visually-hidden " id="devils-bridge" name="devils-bridge" type="checkbox" checked>
+                <span class="form-review__designed-checkbox"></span>
+                Мост Дьявола
+              </label>
             </li>
-            <li class="form-review__option form-review__option--narrow">
-              <input class="form-review__checkbox" id="bell-mountain" name="bell-mountain"  type="checkbox" checked>
-              <label class="form-review__label-checkbox" for="bell-mountain">Гора-Колокол</label>
+            <li class="form-review__option">
+              <label class="form-review__label-checkbox" for="bell-mountain">
+                <input class="form-review__checkbox visually-hidden " id="bell-mountain" name="bell-mountain"  type="checkbox" checked>
+                <span class="form-review__designed-checkbox"></span>
+                Гора-Колокол
+              </label>
             </li>
-            <li class="form-review__option form-review__option--narrow">
-              <input class="form-review__checkbox" id="slide-park" name="slide-park" type="checkbox" checked>
-              <label class="form-review__label-checkbox" for="slide-park">Слайд-парк</label>
+            <li class="form-review__option">
+              <label class="form-review__label-checkbox" for="slide-park">
+                <input class="form-review__checkbox visually-hidden" id="slide-park" name="slide-park" type="checkbox" checked>
+                <span class="form-review__designed-checkbox"></span>
+                Слайд-парк
+              </label>
             </li>
-            <li class="form-review__option form-review__option--narrow">
-              <input class="form-review__checkbox" id="red-rocks" name="red-rocks" type="checkbox">
-              <label class="form-review__label-checkbox" for="red-rocks">Красные скалы</label>
+            <li class="form-review__option">
+              <label class="form-review__label-checkbox" for="red-rocks">
+                <input class="form-review__checkbox visually-hidden" id="red-rocks" name="red-rocks" type="checkbox">
+                <span class="form-review__designed-checkbox"></span>
+                Красные скалы
+              </label>
             </li>
           </ul>
         </fieldset>
         <label class="page__title page__title--form-section page__title--form-review" for="emotions-review">Опишите свои эмоции:</label>
-        <textarea class="form-review__item form-review__text-area"  id="emotions-review" name="emotions-review">Опишите подробно все свои восторги</textarea>
+        <textarea class="form-review__item form-review__input form-review__text-area"  id="emotions-review" name="emotions-review" placeholder="Опишите подробно все свои восторги"></textarea>
         <div class="form-review__footer">
           <button class="form-review__button button button--send-review" type="submit">Отправить отзыв</button>
           <p class="form-review__note">* — обязательные поля</p>
         </div>
       </form>
     </main>
-    <footer class="page-footer container wrapper">
+    <footer class="page-footer wrapper">
       <p class="page-footer__hashtag">#visitsedona</p>
       <ul class="page-footer__social social">
         <li class="social__item social__item--vkontakte">
