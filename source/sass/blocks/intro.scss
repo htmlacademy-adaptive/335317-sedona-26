@@ -18,6 +18,7 @@
   background-size: cover;
   order: -1;
 
+  /*показалось, что будет красивее вставить треугольник раньше чем на 780px*/
   @media (min-width: $mobile-bigger) {
     background-image: url("../img/back-desktop.jpg");
     background-position: 50% 0;
