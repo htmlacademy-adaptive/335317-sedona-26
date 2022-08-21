@@ -37,3 +37,14 @@ $desktop-width: 1200px;
 $mobile-width-only: 767px;
 $mobile-and-tablet-width: 1099px;
 $mobile-bigger: 480px;
+
+
+@mixin mobile-section-line {
+  content: "";
+  position: absolute;
+  left: -19px;
+  width: calc(100% + 38px);
+  height: 1px;
+  background-color: $border-grey;
+}
+

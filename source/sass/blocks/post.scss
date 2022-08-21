@@ -13,7 +13,14 @@
     }
   }
 
-  &:first-child {
+  &--accent {
+    &::before {
+      @media (max-width: $mobile-width-only) {
+        @include mobile-section-line;
+        top: 0;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       grid-column: 1 / 3;
     }
@@ -25,17 +32,11 @@
 
   &::after {
     @media (max-width: $mobile-width-only) {
-      content: "";
-      position: absolute;
+      @include mobile-section-line;
       bottom: 0;
-      left: -30vw;
-      width: 100vw;
-      height: 1px;
-      background-color: $border-grey;
     }
   }
 }
-
 
 .post__description {
   @media (min-width: $tablet-width) {
