@@ -17,6 +17,19 @@
     color: $basic-white;
     background-color: $basic-blue;
 
+    &:first-child {
+      @media (max-width: $mobile-width-only) {
+        background-image:
+          linear-gradient(10deg, #81b3d2 93%, transparent 93%),
+          linear-gradient(350deg, #81b3d2 93%, transparent 93%),
+          linear-gradient(180deg, #ffffff 7%, #81b3d2 7%);
+        background-position:
+          0 0,
+          0 0,
+          0 0;
+      }
+    }
+
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: 1fr 2fr;
@@ -63,17 +76,6 @@
   @media (min-width: $desktop-width) {
     padding: 52px;
   }
-  /*
-    background-image:
-      linear-gradient(10deg, #81b3d2 85%, transparent 85%),
-      linear-gradient(350deg, #81b3d2 85%, transparent 85%),
-      linear-gradient(180deg, #ffffff 15%, #81b3d2 15%);
-    background-position:
-      0 0,
-      0 0,
-      0 0;
-  }
-*/
 }
 
 .feature__title {
