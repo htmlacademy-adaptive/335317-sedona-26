@@ -36,19 +36,19 @@
       @media (max-width: $mobile-width-only) {
         top: 20px;
       }
-      background-image: url("../../img/house.svg");
+      background-image: url("../img/house.svg");
     }
   }
 
   &--food {
     &::before {
-      background-image: url("../../img/burger.svg");
+      background-image: url("../img/burger.svg");
     }
   }
 
   &--souvenirs {
     &::before {
-      background-image: url("../../img/present.svg");
+      background-image: url("../img/present.svg");
     }
   }
 

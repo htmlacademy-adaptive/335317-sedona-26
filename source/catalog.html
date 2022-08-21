@@ -34,7 +34,7 @@
       <section class="catalog-content__intro intro">
         <h2 class="page__title page__title--accent intro__subtitle wrapper">Фото и видео</h2>
         <div class="intro__wrapper intro__wrapper--not-main">
-          <img class="intro__image intro__image--short" src="img/SEDONA.svg" width="229" height="39" alt="Надпись:Sedona">
+          <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись:Sedona">
         </div>
         <p class="intro__lead wrapper--narrow">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
@@ -86,10 +86,13 @@
       <section class="catalog-content__presentation presentation wrapper">
         <h2 class="page__title page__title--accent presentation__title">Все еще сомневаетесь?</h2>
         <p class="presentation__description wrapper--narrow">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video class="presentation__video" width="280" height="177" poster="img/Poster-video-mobile.jpg">
-          <source src="#" type="video/mp4">
-          <source src="#" type="video/ogg">
-        </video>
+        <div class="presentation__video-wrapper">
+          <button class="presentation__button" aria-label="Воспроизвести"></button>
+          <video class="presentation__video" width="280" height="177" poster="img/video-mobile.jpg">
+            <source src="#" type="video/mp4">
+            <source src="#" type="video/ogg">
+          </video>
+        </div>
       </section>
     </main>
     <footer class="page-footer wrapper">

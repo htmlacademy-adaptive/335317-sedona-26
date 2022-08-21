@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body container">
-    <header class="page__header page-header container">
+    <header class="page__header page-header">
       <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="логотип сайта туров в город Седона">
       </a>
@@ -34,7 +34,7 @@
       <section class="form-content__intro intro">
         <h2 class="page__title page__title--accent intro__subtitle wrapper">Оставьте свой отзыв</h2>
         <div class="intro__wrapper intro__wrapper--not-main">
-          <img class="intro__image intro__image--short" src="img/SEDONA.svg" width="229" height="39" alt="Надпись:Sedona">
+          <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись:Sedona">
         </div>
         <p class="intro__lead wrapper--narrow">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>
@@ -58,7 +58,7 @@
         </fieldset>
         <fieldset class="form-review__item form-review__item--contact">
           <legend class="page__title page__title--form-review">Контактная информация:</legend>
-          <ul class="form-review__list">
+          <ul class="form-review__list form-review__list--contact">
             <li class="form-review__option">
               <label class="form-review__label form-review__label--image form-review__label--phone" for="phone">Контактный телефон*:</label>
               <input class="form-review__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
@@ -70,23 +70,23 @@
           </ul>
         </fieldset>
         <fieldset class="form-review__item form-review__item--experience">
-          <legend class="page__title page__title--form-section page__title--form-review">Ваше общее впечатление:</legend>
+          <legend class="page__title  page__title--form-review page__title--form-accent">Ваше общее впечатление:</legend>
           <ul class="form-review__list">
-            <li class="form-review__option">
+            <li class="form-review__option form-review__option--radio">
               <label class="form-review__label-radio" for="good-experience">
                 <input class="form-review__radio visually-hidden"  name="experience" id="good-experience" value="good-experience" type="radio" checked>
                 <span class="form-review__designed-radio"></span>
                 Скорее положительное
               </label>
             </li>
-            <li class="form-review__option">
+            <li class="form-review__option form-review__option--radio">
               <label class="form-review__label-radio" for="bad-experience">
                 <input class="form-review__radio visually-hidden"  name="experience" id="bad-experience" value="bad-experience" type="radio">
                 <span class="form-review__designed-radio"></span>
                 Скорее отрицательное
               </label>
             </li>
-            <li class="form-review__option">
+            <li class="form-review__option form-review__option--radio">
               <label class="form-review__label-radio" for="difficult-to-answer">
                 <input class="form-review__radio visually-hidden"  name="experience" id="difficult-to-answer" value="difficult-to-answer" type="radio">
                 <span class="form-review__designed-radio"></span>
@@ -95,30 +95,30 @@
           </ul>
         </fieldset>
         <fieldset class="form-review__item form-review__item--attractions">
-          <legend class="page__title page__title--form-section page__title--form-review">Посещенные достопримечательности:</legend>
-          <ul class="form-review__list">
-            <li class="form-review__option">
+          <legend class="page__title page__title--form-review page__title--form-accent page__title--form-attractions">Посещенные достопримечательности:</legend>
+          <ul class="form-review__list form-review__list--attractions">
+            <li class="form-review__option form-review__option--checkbox">
               <label class="form-review__label-checkbox" for="devils-bridge">
                 <input class="form-review__checkbox visually-hidden " id="devils-bridge" name="devils-bridge" type="checkbox" checked>
                 <span class="form-review__designed-checkbox"></span>
                 Мост Дьявола
               </label>
             </li>
-            <li class="form-review__option">
+            <li class="form-review__option form-review__option--checkbox">
               <label class="form-review__label-checkbox" for="bell-mountain">
                 <input class="form-review__checkbox visually-hidden " id="bell-mountain" name="bell-mountain"  type="checkbox" checked>
                 <span class="form-review__designed-checkbox"></span>
                 Гора-Колокол
               </label>
             </li>
-            <li class="form-review__option">
+            <li class="form-review__option form-review__option--checkbox">
               <label class="form-review__label-checkbox" for="slide-park">
                 <input class="form-review__checkbox visually-hidden" id="slide-park" name="slide-park" type="checkbox" checked>
                 <span class="form-review__designed-checkbox"></span>
                 Слайд-парк
               </label>
             </li>
-            <li class="form-review__option">
+            <li class="form-review__option form-review__option--checkbox">
               <label class="form-review__label-checkbox" for="red-rocks">
                 <input class="form-review__checkbox visually-hidden" id="red-rocks" name="red-rocks" type="checkbox">
                 <span class="form-review__designed-checkbox"></span>
@@ -127,7 +127,7 @@
             </li>
           </ul>
         </fieldset>
-        <label class="page__title page__title--form-section page__title--form-review" for="emotions-review">Опишите свои эмоции:</label>
+        <label class="page__title page__title--form-accent page__title--text-area" for="emotions-review">Опишите свои эмоции:</label>
         <textarea class="form-review__item form-review__input form-review__text-area"  id="emotions-review" name="emotions-review" placeholder="Опишите подробно все свои восторги"></textarea>
         <div class="form-review__footer">
           <button class="form-review__button button button--send-review" type="submit">Отправить отзыв</button>

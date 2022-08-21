@@ -6,42 +6,50 @@
 }
 
 .form-review__list {
-  margin: 0 0 6px 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+
+    &--contact {
+      justify-content: end;
+    }
+  }
+
+  &--attractions {
+    justify-content: center;
   }
 }
 
 .form-review__item {
   position: relative;
-  margin-bottom: 24px;
+  margin-bottom: 34px;
   padding: 0;
   border: none;
   box-sizing: border-box;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
+
   &:first-child {
     margin-bottom: 39px;
-  }
 
-  &:nth-child(2) {
-    margin-bottom: 34px;
-  }
+    @media (min-width: $tablet-width) {
+      margin-bottom: 48px;
+    }
 
-  /* переделать линии
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -30vw;
-    width: 100vw;
-    height: 1px;
-    background-color: $border-grey;
+    @media (min-width: $desktop-width) {
+      margin-bottom: 71px;
+    }
   }
-*/
 
   &--experience {
     @media (min-width: $tablet-width) {
@@ -52,7 +60,18 @@
   &--attractions {
     @media (min-width: $tablet-width) {
       grid-column: 1 / 3;
+      margin-bottom: 42px;
     }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 56px;
+    }
+  }
+}
+
+.form-review__item--name {
+  @media (min-width: $tablet-width) {
+    box-shadow: 1px 0 0 0 $border-grey;
   }
 }
 
@@ -68,8 +87,24 @@
   width: 280px;
   margin-bottom: 16px;
 
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $desktop-width) {
+    width: 430px;
+  }
+
+  &--radio {
+    margin-bottom: 36px;
+
+    @media (min-width: $desktop-width) {
+      width: 33%;
+    }
+  }
+
+  &--checkbox {
+    margin-bottom: 36px;
+
+    @media (min-width: $desktop-width) {
+      width: 25%;
+    }
   }
 }
 
@@ -86,7 +121,7 @@
       width: 58px;
       height: 58px;
       background-color: $input-dark-grey;
-      background-image: url("../../img/phone.svg");
+      background-image: url("../img/phone.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       z-index: 1;
@@ -102,7 +137,7 @@
       width: 58px;
       height: 58px;
       background-color: $input-dark-grey;
-      background-image: url("../../img/mail.svg");
+      background-image: url("../img/mail.svg");
       background-repeat: no-repeat;
       background-position: 50% 50%;
       z-index: 1;
@@ -133,12 +168,12 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 3;
-    margin: 0 0 56px;
+    margin: 0 0 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: 768px;
-    margin: 0 auto 56px;
+    margin: 0 auto 48px;
   }
 }
 
@@ -165,7 +200,7 @@
 
 .form-review__designed-checkbox {
   position: absolute;
-  top: -1em;
+  top: -0.7em;
   margin-left: -62px;
   width: 46px;
   height: 46px;
@@ -174,7 +209,7 @@
 }
 
 .form-review__checkbox:checked + .form-review__designed-checkbox {
-  background-image: url("../../img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -187,24 +222,43 @@
   background-color: $input-grey-hover;
 }
 
-.form-review__checkbox:active + .form-review__designed-checkbox {
+/*disabled или нет? и галочку затемнить*/
+.form-review__checkbox:disabled + .form-review__designed-checkbox {
   background-color: $input-grey-down;
-  opacity: 0.3;
 }
 
 .form-review__label-radio {
+  padding-left: 62px;
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
-  padding-left: 62px;
 }
 
 .form-review__designed-radio {
   position: absolute;
-  top: -1em;
+  top: -0.7em;
   margin-left: -62px;
   width: 46px;
   height: 46px;
   background-color: $input-basic-grey;
   border-radius: 50%;
+}
+
+.form-review__radio:checked + .form-review__designed-radio {
+  background-image: url("../img/circle.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.form-review__radio:focus + .form-review__designed-radio {
+  background-color: $input-grey-hover;
+}
+
+.form-review__radiop:hover + .form-review__designed-radio {
+  background-color: $input-grey-hover;
+}
+
+/*disabled или нет? и галочку затемнить*/
+.form-review__radio:disabled + .form-review__designed-radio {
+  background-color: $input-dark-grey;
 }
