@@ -19,6 +19,11 @@
     background-color: $button-main-color-down;
   }
 
+  &:disabled {
+    color: $basic-white;
+    background-color: $button-main-color-disabled;
+  }
+
   &--find-hotel {
     font-size: 21px;
     padding: 15px 34px;
