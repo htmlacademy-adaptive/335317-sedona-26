@@ -1,3 +1,26 @@
-.social__item {
+.social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.social__link {
+  display: block;
+  padding: 12px;
+  margin: 0 6px 0 0;
+  line-height: 0;
   background-color: $basic-blue;
+
+  &:hover {
+    background-color: $button-main-color-hover;
+  }
+
+  &:active {
+    background-color: $button-main-color-down;
+
+    .social__image {
+      opacity: 0.3;
+    }
+  }
 }

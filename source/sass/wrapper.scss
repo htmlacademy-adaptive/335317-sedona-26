@@ -1,5 +1,6 @@
 .wrapper {
-  max-width: 282px;
+  padding-left: 19px;
+  padding-right: 19px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -9,11 +10,14 @@
   @media (min-width: $desktop-width) {
     max-width: 960px;
   }
-}
 
-.wrapper--narrow {
-  @media (min-width: $tablet-width) {
-    max-width: 490px;
+  &--narrow {
+    padding-left: 40px;
+    padding-right: 40px;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      max-width: 490px;
+    }
   }
 }

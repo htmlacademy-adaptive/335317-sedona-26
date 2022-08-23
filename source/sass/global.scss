@@ -7,11 +7,6 @@ img {
   height: auto;
 }
 
-iframe {
-  display: block;
-  border: none;
-}
-
 .page {
   height: 100%;
 }
@@ -23,7 +18,7 @@ iframe {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: $text-main-color;
-  background-color: $basic-background;
+  background-color: $basic-white;
 }

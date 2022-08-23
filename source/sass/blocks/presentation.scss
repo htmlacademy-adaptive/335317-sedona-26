@@ -9,4 +9,40 @@
 .presentation__description {
   margin: 0 auto 38px auto;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+  }
+}
+
+.presentation__video-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.presentation__video {
+  width: 100%;
+}
+
+.presentation__button {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 48px;
+    height: 55px;
+    top: calc(50% - 27px);
+    left: calc(50% - 24px);
+    background-color: $button-video-color;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+  }
 }
