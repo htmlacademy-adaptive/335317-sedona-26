@@ -18,10 +18,20 @@
   background-size: cover;
   order: -1;
 
+  @media (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(10deg, #ffffff 25%, transparent 25%),
+      linear-gradient(350deg, #ffffff 25%, transparent 25%),
+      url("../img/back-desktop@2x.jpg");
+  }
+
   @media (min-width: $mobile-bigger) {
     background-image: url("../img/back-desktop.jpg");
     background-position: 50% 0;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
 
     &::after {
       position: absolute;
@@ -48,6 +58,10 @@
     @media (min-width: $mobile-bigger) {
       background-image: url("../img/back-desktop.jpg");
       background-position: 50% 100%;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/back-desktop@2x.jpg");
+      }
     }
   }
 }

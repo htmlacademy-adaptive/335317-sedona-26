@@ -71,6 +71,10 @@
 .feature__wrapper {
   @media (min-width: $tablet-width) {
     padding: 40px 32px;
+
+    &--second-place {
+      order: 2;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -107,13 +111,10 @@
 .feature__image {
   display: block;
   width: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     height: 256px;
-
-    &--first-place {
-      order: -1;
-    }
   }
 }
 

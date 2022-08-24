@@ -48,7 +48,11 @@
               <p class="feature__number">— №1 —</p>
               <p class="feature__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-            <img class="feature__image" src="img/sedona-house.jpg" width="320" height="260" alt="Фотография старого дома в городе Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="feature__image" src="img/photo-city-mobile@1x.jpg"  srcset="img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография старого дома в городе Седона">
+            </picture>
             <ul class="feature__tips tips">
               <li class="tips__item tips__item--accommodation">
                 <h4 class="page__title tips__title">Жилье</h4>
@@ -65,12 +69,16 @@
             </ul>
           </li>
           <li class="features__item feature--accent feature">
-            <div class="feature__wrapper wrapper">
+            <div class="feature__wrapper feature__wrapper--second-place wrapper">
               <h3 class="feature__title page__title page__title--center">Там есть мост дьявола</h3>
               <p class="feature__number">— №2 —</p>
               <p class="feature__description">Да, по нему можно пройти!<br class="feature__break-text"> Если вы осмелитесь, конечно</p>
             </div>
-            <img class="feature__image feature__image--first-place" src="img/bridge.jpg" width="320" height="260" alt="Фотография Моста Дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="feature__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фотография Моста Дьявола">
+          </picture>
           </li>
           <li class="features__item feature">
             <div class="wrapper">
