@@ -1,9 +1,21 @@
 .presentation {
   padding-top: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
+  }
 }
 
 .presentation__title {
-  margin-bottom: 32px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .presentation__description {
@@ -11,12 +23,17 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 66px;
+    margin-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 86px;
   }
 }
 
 .presentation__video-wrapper {
   position: relative;
+  height: 177px;
   margin: 0 auto;
   background-color: $basic-grey;
   background-image: url("../img/video-mobile@1x.jpg");
@@ -29,6 +46,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    height: 500px;
     background-image: url("../img/video-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {

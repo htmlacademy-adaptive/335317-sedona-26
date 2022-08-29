@@ -4,20 +4,29 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    max-width: 648px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   &--narrow {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 0 auto;
+    padding-left: 21px;
+    padding-right: 21px;
 
     @media (min-width: $tablet-width) {
-      max-width: 490px;
+      max-width: 444px;
+      padding: 0;
+    }
+  }
+
+  &--wide {
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

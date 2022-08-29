@@ -1,18 +1,14 @@
 .catalog-content__intro {
-  margin-bottom: 44px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 88px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 92px;
+    margin-bottom: 54px;
   }
 }
 
 .catalog-content__photos {
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 44px;
   }
 }
 

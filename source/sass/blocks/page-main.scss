@@ -1,19 +1,15 @@
 .page-main__intro {
-  margin-bottom: 35px;
-}
-
-.page-main__features {
-  margin-bottom: 26px;
+  padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding-bottom: 30px;
   }
 }
 
 .page-main__location {
-  margin-bottom: 24px;
+  padding-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }

@@ -1,7 +1,7 @@
 .tips__item {
   position: relative;
   margin-bottom: 22px;
-  padding-left: 65px;
+  padding-left: 20px;
 
   &:first-child {
     @media (max-width: $mobile-width-only) {
@@ -15,11 +15,21 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding: 158px 32px 59px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 158px 52px 79px;
+  }
+
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    left: 58px;
+    left: 17px;
     width: 40px;
     height: 40px;
     background-size: contain;
@@ -34,40 +44,47 @@
   &--accommodation {
     &::before {
       @media (max-width: $mobile-width-only) {
-        top: 20px;
+        top: 22px;
       }
       background-image: url("../img/house.svg");
     }
   }
 
   &--food {
+    @media (max-width: $mobile-width-only) {
+      padding-left: 22px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 158px 50px 59px;
+    }
+
     &::before {
       background-image: url("../img/burger.svg");
     }
   }
 
   &--souvenirs {
+    @media (max-width: $mobile-width-only) {
+      padding-left: 18px;
+    }
+
     &::before {
       background-image: url("../img/present.svg");
     }
   }
-
-  @media (min-width: $tablet-width) {
-    padding: 158px 36px 59px;
-    text-align: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 158px 36px 79px;
-  }
 }
 
 .tips__title {
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 
   @media (max-width: $mobile-width-only) {
-    padding-left: 47px;
-    padding-right: 19px;
+    padding-top: 8px;
+    padding-left: 45px;
+
+    &--food {
+      padding-left: 48px;
+    }
   }
 }
 
@@ -75,7 +92,7 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    padding-left: 47px;
+    padding-left: 44px;
     padding-right: 19px;
   }
 }

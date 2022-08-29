@@ -18,7 +18,6 @@
   }
 
   &--accent {
-    font-size: 21px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
@@ -27,7 +26,7 @@
   }
 
   &--form-review {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     padding-top: 24px;
 
     @media (max-width: $mobile-width-only) {

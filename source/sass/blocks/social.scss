@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  column-gap: 6px;
   justify-content: space-between;
   list-style: none;
   padding: 0;
@@ -8,7 +9,6 @@
 .social__link {
   display: block;
   padding: 12px;
-  margin: 0 6px 0 0;
   line-height: 0;
   background-color: $basic-blue;
 
