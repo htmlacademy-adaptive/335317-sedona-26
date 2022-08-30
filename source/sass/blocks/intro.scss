@@ -81,6 +81,18 @@
     margin-bottom: 32px;
   }
 
+  &--form {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 24px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 116px;
+      margin-bottom: 32px;
+    }
+  }
+
   &--without-text {
     margin: 32px auto 0 auto;
 
@@ -97,7 +109,7 @@
 }
 
 .intro__lead {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

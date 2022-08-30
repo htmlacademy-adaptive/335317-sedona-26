@@ -37,17 +37,28 @@
   }
 
   &--send-review {
-    font-size: 21px;
     padding: 18.5px 34px 13.5px 32px;
+    font-size: 21px;
+
+    @media (max-width: $mobile-width-only) {
+      width: 100%;
+    }
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      justify-content: center;
+      padding-right: 30px;
+      padding-left: 20px;
+    }
   }
 
   &--ok {
-    font-size: 18px;
     padding: 18px 63px 14px 64px;
+    font-size: 18px;
   }
 
   &--close-window {
-    font-size: 18px;
     padding: 18px 62px 14px 60px;
+    font-size: 18px;
   }
 }
