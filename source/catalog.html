@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="img/favicons/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body container">
-    <header class="page__header page-header container">
+    <header class="page__header page-header">
       <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="логотип сайта туров в город Седона">
       </a>
@@ -29,21 +33,25 @@
         </ul>
       </nav>
     </header>
-    <main class="catalog-content">
+    <main class="page-main catalog-content">
       <h1 class="visually-hidden">Живописные места города Седона</h1>
       <section class="catalog-content__intro intro">
         <h2 class="page__title page__title--accent intro__subtitle wrapper">Фото и видео</h2>
         <div class="intro__wrapper intro__wrapper--not-main">
-          <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись:Sedona">
+          <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись: Sedona">
         </div>
-        <p class="intro__lead wrapper--narrow">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="intro__lead wrapper wrapper--narrow">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
-      <section class="catalog-content__photos photos wrapper">
+      <section class="catalog-content__photos photos">
         <h2 class="visually-hidden">Фотографии путишественников</h2>
-        <div class="photos__list">
+        <div class="photos__list wrapper wrapper--wide">
           <figure class="photos__post post post--accent">
             <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-1-mobile.jpg" width="280" height="280" alt="дорожный пейзаж">
+              <picture class="post__image post__image--accent">
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                <img class="post__image post__image--accent" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="дорожный пейзаж">
+              </picture>
             </a>
             <figcaption class="post__description">
               <p class="post__name">Неродные просторы</p>
@@ -58,8 +66,12 @@
           </figure>
           <figure class="photos__post post">
             <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-2-mobile.jpg" width="280" height="280" alt="кактус цветущий маленькими желтыми цветами">
-            </a>
+              <picture class="post__image">
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-2-mobile@1x.jpg" src="img/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="кактус цветущий маленькими желтыми цветами">
+            </picture>
+              </a>
             <figcaption class="post__description">
               <p class="post__name">Местная растительность</p>
               <p class="post__author">Автор фото: Сергей</p>
@@ -73,7 +85,11 @@
           </figure>
           <figure class="photos__post post">
             <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-3-mobile.jpg" width="280" height="280" alt="дорога среди хвойного леса">
+              <picture class="post__image">
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="дорога среди хвойного леса">
+              </picture>
             </a>
             <figcaption class="post__description">
               <p class="post__name">Дорога на север</p>
@@ -88,7 +104,11 @@
           </figure>
           <figure class="photos__post post">
             <a class="post__link" href="#">
-              <img class="post__image" src="img/photo-4-mobile.jpg" width="280" height="280" alt="мост дьявола">
+              <picture class="post__image">
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img class="post__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="мост дьявола">
+              </picture>
             </a>
             <figcaption  class="post__description">
               <p class="post__name">Мост дьявола</p>
@@ -105,10 +125,10 @@
       </section>
       <section class="catalog-content__presentation presentation wrapper">
         <h2 class="page__title page__title--accent presentation__title">Все еще сомневаетесь?</h2>
-        <p class="presentation__description wrapper--narrow">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <p class="presentation__description wrapper--narrow">Смотрите видеопрезентацию и скорее&nbspза билетами, пока они не подорожали в очередной раз!</p>
         <div class="presentation__video-wrapper">
           <button class="presentation__button" aria-label="Воспроизвести"></button>
-          <video class="presentation__video" width="280" height="177" poster="img/video-mobile.jpg">
+          <video class="presentation__video" width="280" height="177">
             <source src="#" type="video/mp4">
             <source src="#" type="video/ogg">
           </video>
