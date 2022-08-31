@@ -83,7 +83,9 @@
   }
 
   &--name {
-    padding-right: 64px;
+    @media (min-width: $desktop-width) {
+      padding-right: 64px;
+    }
   }
 
   &--contact {
@@ -231,6 +233,10 @@
 
   &--contact {
     @media (min-width: $tablet-width) {
+      width: 222px;
+    }
+
+    @media (min-width: $desktop-width) {
       width: 344px;
     }
   }

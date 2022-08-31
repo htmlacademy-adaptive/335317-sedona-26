@@ -8,6 +8,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="img/favicons/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body container">
     <header class="page__header page-header">
@@ -37,7 +38,10 @@
       <section class="form-content__intro intro">
         <h2 class="page__title page__title--accent intro__subtitle intro__subtitle--form wrapper">Оставьте свой отзыв</h2>
         <div class="intro__wrapper intro__wrapper--not-main">
-          <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись:Sedona">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/sedona-tablet.svg">
+            <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись: Sedona">
+          </picture>
         </div>
         <p class="intro__lead wrapper wrapper--narrow">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </section>

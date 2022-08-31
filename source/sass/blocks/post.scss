@@ -127,6 +127,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 400px;
+    height: 267px;
+
+    &--accent {
+      height: 400px;
+    }
   }
 }

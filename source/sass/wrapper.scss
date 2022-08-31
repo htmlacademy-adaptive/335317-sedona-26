@@ -14,11 +14,8 @@
   }
 
   &--narrow {
-    padding-left: 21px;
-    padding-right: 21px;
-
     @media (min-width: $tablet-width) {
-      max-width: 444px;
+      max-width: 458px;
       padding: 0;
     }
   }

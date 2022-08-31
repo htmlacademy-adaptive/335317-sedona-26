@@ -12,6 +12,7 @@
   background-size: cover;
   overflow-x: hidden;
   order: -1;
+  max-height: 518px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-desktop@2x.jpg");
@@ -29,12 +30,6 @@
     background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
     background-position: bottom center;
-
-    @media (min-width: $desktop-width) {
-      left: -5px;
-      width: calc(100% + 6px);
-      height: 60px;
-    }
   }
 
   &--not-main {
@@ -43,16 +38,23 @@
   }
 }
 
-
 .intro__image {
+  padding-right: 0;
+  padding-left: 0;
   padding-top: 90px;
-  padding-bottom: 85px;
+  padding-bottom: 79px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+    padding-bottom: 84px;
+  }
 
   &--short {
     padding-top: 53px;
     padding-bottom: 60px;
 
     @media (min-width: $tablet-width) {
+      width: 457px;
       padding-top: 94px;
       padding-bottom: 112px;
     }
@@ -61,10 +63,6 @@
       padding-top: 102px;
       padding-bottom: 115px;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 461px;
   }
 }
 
@@ -94,9 +92,10 @@
   }
 
   &--without-text {
-    margin: 32px auto 0 auto;
+    margin: 34px auto 0 auto;
 
     @media (min-width: $tablet-width) {
+      margin-top: 49px;
       padding-left: 124px;
       padding-right: 124px;
     }
