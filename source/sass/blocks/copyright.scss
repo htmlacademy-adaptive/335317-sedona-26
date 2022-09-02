@@ -1,6 +1,5 @@
 .copyright__image {
   margin-left: 12px;
-  fill: $basic-black;
 }
 
 .copyright {
@@ -12,18 +11,10 @@
 
   &:hover {
     color: $basic-blue;
-
-    .copyright__image {
-      fill: $basic-blue;
-    }
   }
 
   &:active {
     color: $opacity-black;
-
-    .copyright__image {
-      fill: $opacity-black;
-    }
   }
 }
 
