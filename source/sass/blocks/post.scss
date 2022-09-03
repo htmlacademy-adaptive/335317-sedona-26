@@ -2,6 +2,11 @@
   position: relative;
   padding: 24px 0;
 
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    justify-content: center;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     background-color: $basic-grey;
@@ -123,6 +128,7 @@
   object-fit: contain;
 
   @media (max-width: $mobile-width-only) {
+    width: auto;
     height: 280px;
   }
 

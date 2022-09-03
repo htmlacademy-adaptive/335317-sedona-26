@@ -45,8 +45,13 @@
   padding-bottom: 79px;
 
   @media (min-width: $tablet-width) {
+    width: 461px;
     padding-top: 77px;
     padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459.5px;
   }
 
   &--short {
