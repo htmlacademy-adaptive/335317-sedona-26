@@ -8,7 +8,7 @@
   background-color: #dbe9f2;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center top;
   background-size: cover;
   overflow-x: hidden;
   order: -1;
@@ -34,7 +34,16 @@
 
   &--not-main {
     background-color: #3a4e53;
-    background-position: 50% 100%;
+    background-position: center bottom;
+    background-size: 280%;
+
+    @media (min-width: $tablet-width) {
+      background-size: 160%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 100%;
+    }
   }
 }
 
