@@ -145,16 +145,13 @@
 
 .form-review__option {
   position: relative;
-  margin: 0 0 16px;
+  margin: 0 auto 16px;
   width: 100%;
   max-width: 430px;
 
   &--radio {
+    width: 280px;
     min-height: 46px;
-
-    @media (min-width: $tablet-width) {
-      width: 280px;
-    }
 
     @media (min-width: $desktop-width) {
       width: 33%;
@@ -168,6 +165,10 @@
     @media (min-width: $desktop-width) {
       width: 25%;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 16px;
   }
 }
 
