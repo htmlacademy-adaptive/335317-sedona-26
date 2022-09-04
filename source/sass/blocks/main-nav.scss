@@ -14,12 +14,6 @@
     }
   }
 
-  &--closed .main-nav__list {
-    @media (max-width: $mobile-width-only) {
-      display: none;
-    }
-  }
-
   &--opened {
     @media (max-width: $mobile-width-only) {
       position: absolute;
@@ -36,6 +30,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $mobile-width-only) {
+    &--closed {
+      display: none;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
