@@ -8,7 +8,7 @@
   background-color: #dbe9f2;
   background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: center top;
   background-size: cover;
   overflow-x: hidden;
   order: -1;
@@ -34,7 +34,16 @@
 
   &--not-main {
     background-color: #3a4e53;
-    background-position: 50% 100%;
+    background-position: center bottom;
+    background-size: 280%;
+
+    @media (min-width: $tablet-width) {
+      background-size: 160%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-size: 100%;
+    }
   }
 }
 
@@ -45,8 +54,13 @@
   padding-bottom: 79px;
 
   @media (min-width: $tablet-width) {
+    width: 461px;
     padding-top: 77px;
     padding-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459.5px;
   }
 
   &--short {
@@ -60,6 +74,8 @@
     }
 
     @media (min-width: $desktop-width) {
+      width: 459.5px;
+      height: 78.8px;
       padding-top: 102px;
       padding-bottom: 115px;
     }
@@ -101,6 +117,7 @@
     }
 
     @media (min-width: $desktop-width) {
+      margin-top: 60px;
       padding-left: 357px;
       padding-right: 357px;
     }

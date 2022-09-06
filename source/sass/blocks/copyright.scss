@@ -1,6 +1,9 @@
 .copyright__image {
   margin-left: 12px;
-  fill: $basic-black;
+}
+
+.copyright__link {
+  color: inherit;
 }
 
 .copyright {
@@ -23,6 +26,14 @@
 
     .copyright__image {
       fill: $opacity-black;
+    }
+  }
+
+  &:visited {
+    color: $basic-black;
+
+    .copyright__image {
+      fill: $basic-black;
     }
   }
 }

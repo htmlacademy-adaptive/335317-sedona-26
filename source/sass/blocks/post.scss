@@ -2,6 +2,11 @@
   position: relative;
   padding: 24px 0;
 
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    justify-content: center;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     background-color: $basic-grey;
@@ -15,7 +20,7 @@
 
   &--accent {
     &::before {
-      @media (max-width: $mobile-width-only) {
+      @media (max-width: $mobile-biggest) {
         @include mobile-section-line;
         top: 0;
       }
@@ -31,7 +36,7 @@
   }
 
   &::after {
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $mobile-biggest) {
       @include mobile-section-line;
       bottom: 0;
     }
@@ -123,6 +128,7 @@
   object-fit: contain;
 
   @media (max-width: $mobile-width-only) {
+    width: auto;
     height: 280px;
   }
 

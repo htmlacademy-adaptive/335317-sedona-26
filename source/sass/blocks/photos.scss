@@ -1,7 +1,11 @@
 .photos__list {
-  @media (min-width: $tablet-width) {
+  @media (min-width: $mobile-biggest) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $tablet-smaller) {
+    column-gap: 10px;
   }
 
   @media (min-width: $desktop-width) {

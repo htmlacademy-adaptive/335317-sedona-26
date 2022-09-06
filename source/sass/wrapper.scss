@@ -14,8 +14,9 @@
   }
 
   &--narrow {
-    @media (min-width: $tablet-width) {
-      max-width: 458px;
+    max-width: 446px;
+
+    @media (min-width: $mobile-biggest) {
       padding: 0;
     }
   }
