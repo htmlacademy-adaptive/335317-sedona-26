@@ -20,7 +20,7 @@
 
   &--accent {
     &::before {
-      @media (max-width: $mobile-width-only) {
+      @media (max-width: $mobile-biggest) {
         @include mobile-section-line;
         top: 0;
       }
@@ -36,7 +36,7 @@
   }
 
   &::after {
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $mobile-biggest) {
       @include mobile-section-line;
       bottom: 0;
     }
