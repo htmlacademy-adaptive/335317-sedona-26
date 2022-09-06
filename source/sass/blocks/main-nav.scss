@@ -42,11 +42,19 @@
     justify-content: space-around;
     flex-wrap: wrap;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: stretch;
+    gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .main-nav__item {
   @media (min-width: $tablet-width) {
-    min-width: 130px;
+    width: 130px;
+    word-wrap: break-word;
 
     &:nth-child(2) {
       margin-right: 152px;
@@ -54,10 +62,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 220px;
+    width: 200px;
 
     &:nth-child(2) {
-      margin-right: 220px;
+      margin-right: 240px;
     }
   }
 }
