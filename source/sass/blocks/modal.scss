@@ -1,6 +1,6 @@
 .modal {
   position: fixed;
-  top: 50vh;
+  top: 30vh;
   right: 0;
   left: 0;
   display: none;
@@ -9,17 +9,19 @@
   text-align: center;
   background-color: $basic-white;
   box-shadow: 0 0 0 50vmax $opacity-black;
+  box-sizing: border-box;
   z-index: 100;
 
   &--failure {
+    display: block;
     padding: 45px 42px 35px;
 
     @media (min-width: $tablet-width) {
       width: 400px;
-      padding: 54px 47px 49px;
+      padding: 56px 47px 49px;
     }
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $desktop-width) {
       padding: 48px 47px 49px;
     }
   }
@@ -30,7 +32,7 @@
 
     @media (min-width: $tablet-width) {
       width: 640px;
-      padding: 55px 100px 44px;
+      padding: 55px 50px 44px;
       background-image: linear-gradient(to top, $basic-grey 0 146px, $basic-white 146px 100%);
     }
   }
@@ -40,12 +42,12 @@
   margin: 0 0 28px;
 
   &--big {
-    margin-bottom: 68px;
-    padding-right: 39px;
-    padding-left: 39px;
+    margin-bottom: 70px;
+    padding-right: 25px;
+    padding-left: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-bottom: 78px;
+      margin-bottom: 97px;
     }
   }
 }
