@@ -1,6 +1,9 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let navList = document.querySelector ('.main-nav__list');
+let modalSuccess = document.querySelector('.modal--success');
+let modalFailure = document.querySelector('.modal--failure');
+let modalClose = document.querySelector('.modal__button');
 
 navMain.classList.remove('main-nav--nojs');
 
@@ -20,3 +23,11 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+function hideModal() {
+  modalSuccess.style.display='none';
+  modalFailure.style.display='none';
+}
+
+modalClose.addEventListener('click', function() {
+  hideModal();
+});
