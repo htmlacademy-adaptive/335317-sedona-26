@@ -6,6 +6,7 @@ import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
+import htmlmin from 'gulp-htmlmin';
 
 // Styles
 
@@ -21,6 +22,12 @@ export const styles = () => {
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
+
+//HTML
+export const html = () => {
+  return gulp.src('source/*.html')
+  .pipe(gulp.dest('build'));
+  }
 
 // Server
 
