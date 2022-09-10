@@ -11,7 +11,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import {deleteAsync} from 'del';
 
 // Styles
 
@@ -45,13 +45,13 @@ const scripts = () => {
 }
 
 //Image
-const optimizeImage = () => {
+const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe (squoosh())
     .pipe(gulp.dest('.build/img'))
 }
 
-const copyImage = () => {
+const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe(gulp.dest('.build/img'))
 }
@@ -97,7 +97,7 @@ const copy = (done) => {
   // Clean
 
 const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 };
 
 // Server
