@@ -45,20 +45,22 @@ const scripts = () => {
 }
 
 //Image
+
 const optimizeImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
     .pipe (squoosh())
-    .pipe(gulp.dest('.build/img'))
+    .pipe(gulp.dest('build/img'))
 }
 
 const copyImages = () => {
   return gulp.src('source/img/**/*.{jpg,png}')
-    .pipe(gulp.dest('.build/img'))
+    .pipe(gulp.dest('build/img'))
 }
 
 //Webp
+
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src('source/img/**/*.{png,jpg}', '!source/img/favicons/*.png')
     .pipe(squoosh({
   webp: {}
   }))
@@ -66,6 +68,7 @@ const createWebp = () => {
 }
 
 //SVG
+
 export const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
@@ -87,6 +90,7 @@ const copy = (done) => {
   gulp.src([
     'source/fonts/*.{woff2,woff}',
     'source/*.ico',
+    'source/manifest.webmanifest',
     ], {
     base: 'source'
     })
