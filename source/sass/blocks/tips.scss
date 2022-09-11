@@ -4,19 +4,23 @@
   padding-left: 20px;
 
   &:first-child {
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $tablet-smaller) {
       padding-top: 23px;
     }
   }
 
   &:last-child {
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $tablet-smaller) {
       margin-bottom: 52px;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-smaller) {
     margin-bottom: 0;
+    padding: 30px 32px;
+  }
+
+  @media (min-width: $tablet-width) {
     padding: 158px 32px 59px;
     text-align: center;
   }
@@ -35,15 +39,17 @@
     background-size: contain;
     background-repeat: no-repeat;
 
-    @media (min-width: $tablet-width) {
+    @media (min-width: $tablet-smaller) {
       top: 17.5%;
+    }
+
+    @media (min-width: $tablet-width) {
       left: 35%;
       width: 76px;
       height: 76px;
     }
 
     @media (min-width: $desktop-width) {
-      top: 17.5%;
       left: 39.5%;
       width: 79px;
       height: 76px;
@@ -52,7 +58,7 @@
 
   &--accommodation {
     &::before {
-      @media (max-width: $mobile-width-only) {
+      @media (max-width: $tablet-smaller) {
         top: 22px;
       }
       background-image: url("../img/house.svg");
@@ -60,7 +66,7 @@
   }
 
   &--food {
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $tablet-smaller) {
       padding-left: 25px;
     }
 
@@ -74,7 +80,7 @@
   }
 
   &--souvenirs {
-    @media (max-width: $mobile-width-only) {
+    @media (max-width: $tablet-smaller) {
       padding-left: 18px;
     }
 
