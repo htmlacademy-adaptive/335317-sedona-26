@@ -4,10 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/icon.svg" type="img/favicons/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" href="img/favicons/icon.svg">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body container">
@@ -17,7 +16,7 @@
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle  main-nav__toggle--closed" type="button" aria-label="Отобразить навигацию по разделам сайта"></button>
-        <ul class="main-nav__list main-nav__list--closed">
+        <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -40,7 +39,7 @@
         <div class="intro__wrapper intro__wrapper--not-main">
           <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись: Sedona">
         </div>
-        <p class="intro__lead wrapper wrapper--narrow">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbspтакже о посещенных вами достопримечательностях</p>
+        <p class="intro__lead wrapper wrapper--narrow">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
       </section>
       <form class="form-content__form-review form-review wrapper" method="post" action="https://echo.htmlacademy.ru/">
         <fieldset class="form-review__item form-review__item--name">
@@ -174,15 +173,15 @@
       </div>
     </footer>
     <section class="modal modal--failure">
-      <h2 class="page__title page__title--modal">Что-то пошло не так!</h2>
+      <h2 class="page__title page__title--modal">Что-то пошло не&nbsp;так!</h2>
       <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="modal__button button button--ok" type="button">Ok</button>
+      <button class="modal__button button button--ok" type="button" onclick="hideModal()">Ok</button>
     </section>
     <section class="modal modal--success">
       <h2 class="page__title page__title--modal">Ваш отзыв отправлен!</h2>
-      <p class="modal__description modal__description--big">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
-      <button class="modal__button button button--close-window" type="button">Закрыть окно</button>
+      <p class="modal__description modal__description--big">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В&nbsp;ближайшее время мы опубликуем его на сайте.</p>
+      <button class="modal__button button button--close-window" type="button" onclick="hideModal()">Закрыть окно</button>
     </section>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
   </body>
 </html>

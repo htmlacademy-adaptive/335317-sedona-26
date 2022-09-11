@@ -6,7 +6,7 @@
 .intro__wrapper {
   position: relative;
   background-color: #dbe9f2;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-desktop.webp");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -15,7 +15,7 @@
   max-height: 518px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-desktop@2x.jpg");
+    background-image: url("../img/back-desktop@2x.webp");
   }
 
   &::after {

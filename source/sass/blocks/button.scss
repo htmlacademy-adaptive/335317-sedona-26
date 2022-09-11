@@ -53,12 +53,24 @@
   }
 
   &--ok {
+    width: 180px;
     padding: 18px 63px 14px 64px;
     font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 272px;
+      font-size: 21px;
+    }
   }
 
   &--close-window {
+    width: 280px;
     padding: 18px 62px 14px 60px;
     font-size: 18px;
+
+    @media (min-width: $tablet-width) {
+      width: 458px;
+      font-size: 21px;
+    }
   }
 }
