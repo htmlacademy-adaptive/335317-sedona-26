@@ -4,8 +4,12 @@ let navList = document.querySelector ('.main-nav__list');
 let modalSuccess = document.querySelector('.modal--success');
 let modalFailure = document.querySelector('.modal--failure');
 let modalClose = document.querySelector('.modal__button');
+let mapCity = document.querySelector("iframe.location__map");
+
+mapCity.style.display = "block";
 
 navMain.classList.remove('main-nav--nojs');
+navList.classList.remove('main-nav__list--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
@@ -30,4 +34,5 @@ function hideModal() {
 
 modalClose.addEventListener('click', function() {
   hideModal();
+
 });
