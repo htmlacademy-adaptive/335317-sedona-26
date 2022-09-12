@@ -10,7 +10,6 @@ mapCity.style.display = "block";
 
 navMain.classList.remove('main-nav--nojs');
 navList.classList.remove('main-nav__list--nojs');
-navList.classList.remove('page-header__logo--nojs');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
