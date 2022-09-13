@@ -14,7 +14,7 @@
   }
 
   &--narrow {
-    max-width: 446px;
+    max-width: 458px; /*446px;*/
 
     @media (min-width: $mobile-biggest) {
       padding: 0;

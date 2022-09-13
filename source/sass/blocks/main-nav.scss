@@ -37,6 +37,10 @@
       display: none;
     }
 
+    &--opened {
+      display: block;
+    }
+
     &--nojs {
       display: block;
     }

@@ -40,28 +40,27 @@
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-smaller) {
-      top: 17.5%;
+      top: 17%;
     }
 
     @media (min-width: $tablet-width) {
-      left: 35%;
-      width: 76px;
-      height: 76px;
+      left: 34.5%;
+      width: 80px;
+      height: 80px;
     }
 
     @media (min-width: $desktop-width) {
       left: 39.5%;
-      width: 79px;
-      height: 76px;
     }
   }
 
   &--accommodation {
     &::before {
+      background-image: url("../img/house.svg");
+
       @media (max-width: $tablet-smaller) {
         top: 22px;
       }
-      background-image: url("../img/house.svg");
     }
   }
 
@@ -109,7 +108,7 @@
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    padding-left: 44px;
+    padding-left: 43px;
     padding-right: 19px;
   }
 }
