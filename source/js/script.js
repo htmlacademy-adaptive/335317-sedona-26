@@ -6,7 +6,7 @@ let modalFailure = document.querySelector('.modal--failure');
 let modalClose = document.querySelector('.modal__button');
 let mapCity = document.querySelector('iframe.location__map');
 
-mapCity.style.display = 'block';
+if(mapCity) {mapCity.style.display = 'block'};
 
 navMain.classList.remove('main-nav--nojs');
 navList.classList.remove('main-nav__list--nojs');
