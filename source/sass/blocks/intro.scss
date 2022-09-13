@@ -85,7 +85,7 @@
 }
 
 .intro__subtitle {
-  margin: 36px auto 24px auto;
+  margin: 38px auto 26px auto;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
@@ -98,6 +98,8 @@
   }
 
   &--form {
+    margin: 36px auto 24px auto;
+
     @media (min-width: $tablet-width) {
       margin-bottom: 24px;
       line-height: 24px;
@@ -127,7 +129,7 @@
 }
 
 .intro__lead {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
