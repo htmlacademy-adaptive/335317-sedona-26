@@ -14,7 +14,15 @@
   }
 
   &--narrow {
-    max-width: 458px; /*446px;*/
+    max-width: 458px;
+
+    @media (min-width: $mobile-biggest) {
+      padding: 0;
+    }
+  }
+
+  &--narrow-catalog {
+    max-width: 446px;
 
     @media (min-width: $mobile-biggest) {
       padding: 0;
