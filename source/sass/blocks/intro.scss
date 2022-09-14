@@ -6,7 +6,7 @@
 .intro__wrapper {
   position: relative;
   background-color: #dbe9f2;
-  background-image: url("../img/back-desktop.webp");
+  background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -30,7 +30,7 @@
   }
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-desktop@2x.webp");
+    background-image: url("../img/back-desktop@2x.jpg");
   }
 
   &--not-main {
@@ -39,7 +39,7 @@
     background-size: 280%;
 
     @media (min-width: $tablet-width) {
-      background-size: 160%;
+      background-size: 156%;
     }
 
     @media (min-width: $desktop-width) {
@@ -133,7 +133,7 @@
   margin-bottom: 29px;
 
   &--catalog {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $tablet-width) {

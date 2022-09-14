@@ -89,6 +89,10 @@
     }
   }
 
+  &--simple-last {
+    border-bottom: none;
+  }
+
   @media (min-width: $mobile-biggest) {
     margin-right: 0;
     margin-left: 0;
