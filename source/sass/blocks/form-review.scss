@@ -240,6 +240,11 @@
   border: none;
   box-sizing: border-box;
 
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
   &::placeholder {
     color: $opacity-black;
   }
@@ -298,6 +303,7 @@
   font-weight: 700;
   text-transform: none;
   padding-left: 62px;
+  cursor: pointer;
 }
 
 .form-review__designed-checkbox {
@@ -352,6 +358,7 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
+  cursor: pointer;
 }
 
 .form-review__designed-radio {

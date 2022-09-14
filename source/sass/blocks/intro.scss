@@ -6,7 +6,7 @@
 .intro__wrapper {
   position: relative;
   background-color: #dbe9f2;
-  background-image: url("../img/back-desktop.webp");
+  background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -14,14 +14,11 @@
   order: -1;
   max-height: 518px;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/back-desktop@2x.webp");
-  }
-
   &::after {
     position: absolute;
     content: "";
     bottom: 0;
+    right: 0;
     left: 0;
     display: block;
     width: 100%;
@@ -32,13 +29,17 @@
     z-index: 2;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-desktop@2x.jpg");
+  }
+
   &--not-main {
     background-color: #3a4e53;
     background-position: center bottom;
     background-size: 280%;
 
     @media (min-width: $tablet-width) {
-      background-size: 160%;
+      background-size: 156%;
     }
 
     @media (min-width: $desktop-width) {
@@ -60,6 +61,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 79px;
     width: 459.5px;
   }
 
@@ -83,7 +85,7 @@
 }
 
 .intro__subtitle {
-  margin: 36px auto 24px auto;
+  margin: 38px auto 26px auto;
 
   @media (min-width: $tablet-width) {
     margin-top: 65px;
@@ -91,12 +93,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 104px;
+    margin-top: 98px;
     margin-bottom: 32px;
   }
 
   &--form {
+    margin: 36px auto 24px auto;
+
     @media (min-width: $tablet-width) {
+      margin-top: 66px;
       margin-bottom: 24px;
       line-height: 24px;
     }
@@ -125,7 +130,11 @@
 }
 
 .intro__lead {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
+  &--catalog {
+    margin-bottom: 24px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

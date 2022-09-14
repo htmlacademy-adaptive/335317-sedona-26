@@ -1,6 +1,6 @@
 .post {
   position: relative;
-  padding: 24px 0;
+  padding: 24px 0 26px;
 
   @media (max-width: $mobile-width-only) {
     display: grid;
@@ -71,7 +71,7 @@
 }
 
 .post__name {
-  margin: 18px 0 0;
+  margin: 16px 0 0;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {

@@ -8,37 +8,42 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body container">
     <header class="page__header page-header">
-      <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo.svg" width="185" height="96" alt="логотип сайта туров в город Седона">
       </a>
       <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle  main-nav__toggle--closed" type="button" aria-label="Отобразить навигацию по разделам сайта"></button>
+        <button class="main-nav__toggle main-nav__toggle--closed" type="button" aria-label="Отобразить навигацию по разделам сайта"></button>
         <ul class="main-nav__list main-nav__list--closed main-nav__list--nojs">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link"  href="catalog.html">Фото и видео</a>
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link main-nav__link--current">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">HTML ACADEMY</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="page-main form-content">
+    <main class="page__main form-content">
       <h1 class="visually-hidden">Страница отправки отзовов отелей города Седона, штат Аризона</h1>
       <section class="form-content__intro intro">
         <h2 class="page__title page__title--accent intro__subtitle intro__subtitle--form wrapper">Оставьте свой отзыв</h2>
         <div class="intro__wrapper intro__wrapper--not-main">
-          <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись: Sedona">
-        </div>
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/sedona-desktop.svg">
+            <img class="intro__image intro__image--short" src="img/sedona.svg" width="229" height="39" alt="Надпись: Sedona">
+          </picture>
+          </div>
         <p class="intro__lead wrapper wrapper--narrow">Помогите нашим отелям стать лучше! оставьте отзыв о них, а&nbsp;также о посещенных вами достопримечательностях</p>
       </section>
       <form class="form-content__form-review form-review wrapper" method="post" action="https://echo.htmlacademy.ru/">
@@ -157,7 +162,7 @@
         </li>
         <li class="social__item social__item--youtube">
           <a class="social__link" href="#" aria-label="ссылка на страницу Седона youtube">
-            <svg  class="social__image"width="24" height="24" aria-hidden="true" aria-label ="логотип Youtune" focusable="false">
+            <svg  class="social__image" width="24" height="24" aria-hidden="true" aria-label ="логотип Youtune" focusable="false">
               <use xlink:href ="./img/sprite.svg#youtube"></use>
             </svg>
           </a>
