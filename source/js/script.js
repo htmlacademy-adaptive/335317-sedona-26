@@ -12,21 +12,12 @@ navMain.classList.remove('main-nav--nojs');
 navList.classList.remove('main-nav__list--nojs');
 
 navToggle.addEventListener('click', function () {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-    navToggle.classList.remove('main-nav__toggle--closed');
-    navToggle.classList.add('main-nav__toggle--opened');
-    navList.classList.remove('main-nav__list--closed');
-    navList.classList.add('main-nav__list--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-    navToggle.classList.add('main-nav__toggle--closed');
-    navToggle.classList.remove('main-nav__toggle--opened');
-    navList.classList.add('main-nav__list--closed');
-    navList.classList.remove('main-nav__list--opened');
-  }
+  navMain.classList.toggle('main-nav--closed');
+  navMain.classList.toggle('main-nav--opened');
+  navToggle.classList.toggle('main-nav__toggle--closed');
+  navToggle.classList.toggle('main-nav__toggle--opened');
+  navList.classList.toggle('main-nav__list--closed');
+  navList.classList.toggle('main-nav__list--opened');
 });
 
 function hideModal() {
