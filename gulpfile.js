@@ -76,7 +76,7 @@ const copyFavicon = () => {
 
 //SVG
 
-export const svg = () =>
+const svg = () =>
   gulp.src(['source/img/*.svg', '!source/img/icons/*.svg'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
