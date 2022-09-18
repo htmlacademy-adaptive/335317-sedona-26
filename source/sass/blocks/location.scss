@@ -8,8 +8,14 @@
   object-fit: cover;
 }
 
-iframe.location__map {
+.location__map--iframe {
   display: none;
+  width: 100%;
+  max-height: 350px;
+  border: none;
+  background-color: $basic-grey;
+  background-size: cover;
+  object-fit: cover;
 }
 
 .location__noscript {
