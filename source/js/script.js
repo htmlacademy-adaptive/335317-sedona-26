@@ -4,7 +4,7 @@ let navList = document.querySelector ('.main-nav__list');
 let modalSuccess = document.querySelector('.modal--success');
 let modalFailure = document.querySelector('.modal--failure');
 let modalClose = document.querySelector('.modal__button');
-let mapCity = document.querySelector('iframe.location__map');
+let mapCity = document.querySelector('.location__map--iframe');
 
 if(mapCity) {mapCity.style.display = 'block'};
 
