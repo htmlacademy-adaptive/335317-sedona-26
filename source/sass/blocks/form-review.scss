@@ -268,6 +268,21 @@
   &::placeholder {
     color: $opacity-black;
   }
+
+  &:hover {
+    background-color: $input-grey-hover;
+    outline: none;
+  }
+
+  &:focus {
+    background-color: $input-grey-hover;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $basic-white;
+    outline: 4px $input-grey-hover solid;
+  }
 }
 
 .form-review__text-area {
