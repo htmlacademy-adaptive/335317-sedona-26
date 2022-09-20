@@ -6,24 +6,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-.page {
-  height: 100%;
-}
-
-.page__body {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  font-family: "PT Sans", "Arial", sans-serif;
-  color: $text-main-color;
-  background-color: $basic-grey;
-}
-
-.page__main {
-  background-color: $basic-white;
-}

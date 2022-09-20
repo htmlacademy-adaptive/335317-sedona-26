@@ -66,8 +66,15 @@
 
 .presentation__video {
   width: 100%;
-  max-width: 800px;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    height: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .presentation__button {
